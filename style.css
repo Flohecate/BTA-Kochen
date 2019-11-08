@@ -1,15 +1,68 @@
-body{
-  background: red;
+* {
+  box-sizing: border-box;
 }
-a {
-  color: black;
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+nav a {
+  color: #001c00;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;
+}
 
-  }
 ul {
-    list-style-type: none;
-    margin: 0; padding: 0;
+  list-style: none;
+}
+
+nav {
+  display: none
+}
+
+.show {
+  display: block;
+to be done on monday 11/11/2019  /* position: fixed;
+  top: 64px; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: block;
   }
+
+  header{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 16px;
+  }
+}

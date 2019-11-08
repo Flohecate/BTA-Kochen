@@ -13,3 +13,6 @@
     menu.classList.toggle('show');
   };
 })();
+
+
+// write a class under button (show) and body (overflow) when the button is pressed
