@@ -73,7 +73,7 @@ header {
   display: inline-block;
 }
 
-.button:hover{
+.button_white:hover{
   color: #FFF;
   background-color: #374A67;
   border-color: #FFF;
@@ -84,11 +84,24 @@ header {
   height: 100vh;
   color: #000;
   text-align: center;
-  display: flex;
+  display: inherit;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  }
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+    }
+}
+
+
+.recipe img{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.recipe {
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
 }
 
 .button_blue{
@@ -100,7 +113,6 @@ header {
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
   transition: all 0.4s ease;
   margin-top: 1rem;
   display: inline-block;
