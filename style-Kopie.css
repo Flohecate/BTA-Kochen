@@ -13,7 +13,7 @@ button {
 }
 
 nav a {
-  color: #001c00;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -30,7 +30,8 @@ nav {
 
 .show {
   display: block;
-to be done on monday 11/11/2019  /* position: fixed;
+  to be done on monday 11/11/2019
+  /* position: fixed;
   top: 64px; */
 }
 
@@ -42,6 +43,10 @@ header {
   background: white;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+   width: 100%;
 }
 
 #hero {
@@ -56,9 +61,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
+}
 
-.button{
+.button_white {
   background: #FFF;
   text-transform: uppercase;
   font-weight: bold;
@@ -67,57 +72,102 @@ header {
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease;
   margin-top: 1rem;
   display: inline-block;
 }
 
-.button:hover{
+.button_white:hover {
   color: #FFF;
   background-color: #374A67;
   border-color: #FFF;
 }
 
-.card a {
-  text-decoration: none;
+#card {
+  background: #FFF;
+  height: 100vh;
   color: #000;
+  text-align: center;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
-.card p a {
+#card img {
+  width: 100%;
+  border-radius: 1%;
+}
+
+.recipe {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 1%;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.button_blue {
+  background: #374A67;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF;
+  border: #FFF solid 1px;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+
+
+h2 {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+  padding: 5px;
+}
+
+.recipe a {
+  color: #000;
+  text-decoration: none;
+}
+
+.recipe a p {
   color: #b2b2b2;
 }
 
-.card {
-  text-align: center;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
-  border-radius: 5px;
-  overflow: hidden;
-}
 
-.card img {
-  width: 100%;
-
-}
-
-.button.button_blue {
+.recipe a.button_blue {
   color: #FFF;
-  background-color: #374A67;
-  border-color: #FFF;
 }
 
-.button.button_blue:hover{
+.recipe a.button_blue:hover {
   color: #374A67;
   background-color: #FFF;
   border-color: #374A67;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background: #374A67;
+}
+
 
 @media (min-width: 1024px) {
   nav {
     display: block;
   }
 
-  header{
+  header {
     padding-left: 5%;
     padding-right: 5%;
   }
