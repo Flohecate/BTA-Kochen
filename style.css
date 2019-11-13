@@ -5,6 +5,7 @@
 body {
   background: #fff;
   margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -13,11 +14,11 @@ button {
 }
 
 nav a {
-  color: #001c00;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
+
 }
 
 ul {
@@ -30,7 +31,8 @@ nav {
 
 .show {
   display: block;
-to be done on monday 11/11/2019  /* position: fixed;
+  to be done on monday 11/11/2019
+  /* position: fixed;
   top: 64px; */
 }
 
@@ -42,6 +44,7 @@ header {
   background: white;
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%;
 }
 
 #hero {
@@ -56,9 +59,13 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
+}
 
-.button{
+#rezepte {
+  text-align: center;
+}
+
+.button {
   background: #FFF;
   text-transform: uppercase;
   font-weight: bold;
@@ -67,13 +74,13 @@ header {
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease;
   margin-top: 1rem;
   display: inline-block;
 }
 
-.button:hover{
+.button:hover {
   color: #FFF;
   background-color: #374A67;
   border-color: #FFF;
@@ -86,43 +93,77 @@ header {
 
 .card p a {
   color: #b2b2b2;
+  padding: 1rem;
+  display: inline-block;
 }
 
 .card {
   text-align: center;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   overflow: hidden;
+  margin: 1rem;
 }
 
 .card img {
   width: 100%;
-
 }
 
 .button.button_blue {
   color: #FFF;
   background-color: #374A67;
   border-color: #FFF;
+  margin: 1rem;
+  display: block;
 }
 
-.button.button_blue:hover{
+.button.button_blue:hover {
   color: #374A67;
   background-color: #FFF;
   border-color: #374A67;
 }
+
+#abo {
+  display: inline-block;
+  background: #FFF;
+  color: #04122B;
+  text-transform: uppercase;
+}
+
+aside {
+  background: #04122B;
+  color: #FFF;
+  text-align: center;
+  font-weight: normal;
+  padding: 2rem;
+}
+
+.end h2 {
+  text-align: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: medium;
+}
+
+.email {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 
 @media (min-width: 1024px) {
   nav {
     display: block;
   }
 
-  header{
+  header {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  button {
+  header button {
     display: none;
   }
 
@@ -133,4 +174,22 @@ header {
   nav ul li {
     margin-right: 16px;
   }
+
+  .row {
+    display: flex;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card p {
+    align-content: stretch;
+    align-items: stretch;
+    flex: 1 1 auto;
+  }
+
+
 }
