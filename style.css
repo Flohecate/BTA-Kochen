@@ -5,7 +5,7 @@
 body {
   background: #fff;
   margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -18,22 +18,15 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 ul {
   list-style: none;
 }
 
-nav {
-  display: none
-}
-
-.show {
-  display: block;
-  to be done on monday 11/11/2019
-  /* position: fixed;
-  top: 64px; */
+.menu {
+  display: none;
+  align-items: flex-end;
 }
 
 header {
@@ -63,6 +56,14 @@ header {
 
 #rezepte {
   text-align: center;
+}
+
+header button {
+  margin-right: 16px;
+  display: block;
+  position: absolute;
+  top: 1;
+  right: 0
 }
 
 .button {
@@ -171,6 +172,10 @@ aside {
     display: flex;
   }
 
+  .menu {
+    display: flex;
+  }
+
   nav ul li {
     margin-right: 16px;
   }
@@ -190,6 +195,4 @@ aside {
     align-items: stretch;
     flex: 1 1 auto;
   }
-
-
 }
