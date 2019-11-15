@@ -5,7 +5,7 @@
 body {
   background: #fff;
   margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -18,22 +18,14 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 ul {
   list-style: none;
 }
 
-nav {
+header nav {
   display: none
-}
-
-.show {
-  display: block;
-  to be done on monday 11/11/2019
-  /* position: fixed;
-  top: 64px; */
 }
 
 header {
@@ -45,6 +37,28 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
+  position: fixed;
+}
+
+/* the class show exist only when clicking on the menu button, it is not within the html you wrote it will be added in it only once clicking on the button and this is done by a js file */
+.show {
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background: #FFF;
+  width: 100%;
+  height: calc(100vh - 64px);
+  text-align: center;
+  line-height: 600%;
+}
+
+.show ul {
+  padding: 0;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 #hero {
@@ -153,14 +167,35 @@ aside {
 }
 
 
+#footer .legal ul {
+  text-align: center;
+  padding: 0;
+}
+
+#footer .social ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#footer .social li {
+  margin: 0px 2% 5% 2%;
+  font-size: 2rem;
+}
+
 @media (min-width: 1024px) {
   nav {
+    display: block;
+  }
+
+  header nav {
     display: block;
   }
 
   header {
     padding-left: 5%;
     padding-right: 5%;
+    position: relative;
   }
 
   header button {
@@ -191,5 +226,9 @@ aside {
     flex: 1 1 auto;
   }
 
-
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+  }
 }
